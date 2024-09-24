@@ -172,23 +172,17 @@ int main() {
 ```
 
 ### Operators
-
-#### Arithmetic Operators
-Unary operators (++, –) 
-binary operators (+,-,*,/)
-#### Relational Operators 
-Comparison 
-Returns boolean value (<,>,=...)
-#### Logical Operators 
-Combine two or more conditions 
-Returns boolean value (&&, ||, !)
-#### Bitwise Operators 
-Perform bit-level operations (&, |, ^, <<, >>, ~)
-#### Assignment Operators 
-Used to assign value to a variable (=, +=, -=, *=, /=)
-#### Ternary or Conditional Operators 
-Returns value based on condition (?) 
-
+Operators | Symbols
+--- | ---
+C++ Arithmetic Operators | +, -, *, /, %
+--- | ---
+C++ Relational Operators| ==, !=, >, <, >=, <=
+--- | ---
+C++ Logical Operators | &&, ||, !
+--- | ---
+C++ Bitwise Operators | &, |, ^, ~, <<, >>
+--- | ---
+C++ Assignment Operators | =, +=, -=, *=, /=, %=
 
 
 

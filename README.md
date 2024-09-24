@@ -13,7 +13,8 @@ It originated from analysis of the UNIX kernel to investigate to what extent it 
 
 ### Getting Started
 #### How to use C++?
-To start programming in C++, I will choose to use Visual Studio Code as a good programming environment. Because Visual Studio Code includes an interactive debugger, so you can step through source code, inspect variables, view call stacks, and execute commands in the console. VS Code also integrates with build and scripting tools to perform common tasks making everyday workflows faster. Also, developers need a C++ compiler that translates code into machine-readable instructions. Once a compiler is installed, developers can use a text editor or integrated development environment (IDE) to write C++ code. IDEs offer features such as code completion, debugging tools and management capabilities. I followed a video from Youtube about how to set up C++ on Vscode by eEmmFinity. You can also find the video link on the end of this post. And here is a step by step tutorial.
+To start programming in C++, I will choose to use Visual Studio Code as a good programming environment. Because Visual Studio Code includes an interactive debugger, so you can step through source code, inspect variables, view call stacks, and execute commands in the console. VS Code also integrates with build and scripting tools to perform common tasks making everyday workflows faster. You can download Visual Studio Code from [here](https://code.visualstudio.com/) \
+Also, developers need a C++ compiler that translates code into machine-readable instructions. Once a compiler is installed, developers can use a text editor or integrated development environment (IDE) to write C++ code. IDEs offer features such as code completion, debugging tools and management capabilities. I followed a video from Youtube about how to set up C++ on Vscode by eEmmFinity. You can also find the video link on the end of this post. And here is a step by step tutorial.
 
 ### Step-by-Step Guide: Setting Up C++ in VSCode on macOS:
 If you’re planning to use Visual Studio Code (VSCode) for C++ development on a Mac, here’s a comprehensive guide to get you started:
@@ -48,7 +49,7 @@ Check the boxes for:\
 
 ### How to run your code in C++?
 In VSCode, go to File > New Text File, then choose C++ as the language when prompted.\
-Write a simple C++ program, for example the "Hello World"(I also provided the code as a seperate file):
+Write a simple C++ program, for example the "Hello World"(I also provided the code as a seperate file [file]( ):
 ```
 #include <iostream>
 using namespace std;
@@ -90,8 +91,15 @@ To type this in VScode:
 int y = 90;
 ```
 ## Names, Types and Binding
-
+Refer to the [file]( ) for code samples
 ### Naming
+#### Case Sensitive
+C++ is case-sensitive, for example, newNum and newnum are totally different identifiers in C++.
+#### Starting character
+Variable name must start with a letter (A-Z or a-z) or an underscore (_), but cannot start with a digit. And names cannot contain special symbols except underscore (_).
+#### Style conventions:
+Camel case is common for local variables (newNum).\
+Underscore case: Sometimes used, especially in constants (such as first_name).
 
 
 
@@ -106,7 +114,8 @@ int y = 90;
 [3]https://www.techtarget.com/searchdatamanagement/definition/C#:~:text=C%2B%2B%20is%20used%20in%20fields,to%20develop%20complex%20software%20systems/ \
 [4]https://www.youtube.com/watch?v=Qw5qjRNlC-Y \
 [5]https://code.visualstudio.com/docs/languages/cpp \
-
+[6]https://www.ibm.com/docs/en/i/7.4?topic=only-name-binding-dependent-names-c \
+[7]
 
 
 

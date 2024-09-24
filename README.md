@@ -49,7 +49,7 @@ Check the boxes for:\
 
 ### How to run your code in C++?
 In VSCode, go to File > New Text File, then choose C++ as the language when prompted.\
-Write a simple C++ program, for example the "Hello World"(I also provided the code as a seperate file [file]( ):
+Write a simple C++ program, for example the "Hello World"(I also provided the code as a seperate file [file](https://github.com/Yirululu/CS330/blob/main/Helloworld.cpp):
 ```
 #include <iostream>
 using namespace std;

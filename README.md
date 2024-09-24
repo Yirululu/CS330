@@ -171,6 +171,21 @@ int main() {
 }
 ```
 
+#### Statically or Dynamically?
+C++ is a statically typed language, meaning the type of each variable is determined at compile time. 
+
+#### Strongly typed or weakly typed?
+It is strongly typed, and data is predefined within the language. So that type conversions must be explicit in most cases. 
+
+#### Explicitly typed or implicitly typed?
+C++ is explicit, it needs to declare variable types, function parameters, and return values.
+
+#### Are some variables mutable while others are immutable?
+By default, variables in C++ are mutable, meaning their values can change after being assigned. However, you can declare variables as immutable using the "const" keyword:
+```
+const int a = 80; // then x is changing to immutable.
+```
+
 ### Operators
 Operators | Symbols
 --- | ---
@@ -185,7 +200,13 @@ C++ Bitwise Operators | &, |, ^, ~, <<, >>
 C++ Assignment Operators | =, +=, -=, *=, /=, %=
 
 
-
+### Mixed-Type Operations
+C++ allows mixed-type operations, but the results depend on type promotion rules. For example, if you add an int to a float, the int is promoted to float, and the result is a float. You can also use explicit type casting to ensure the correct type:
+```
+int x = 10;
+float y = 3.14;
+float result = x + y; // x change to float
+```
 
 
 

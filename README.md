@@ -91,7 +91,7 @@ To type this in VScode:
 int y = 90;
 ```
 ## Names, Types and Binding
-Refer to the [file]( ) for code samples
+Refer to the [file](https://github.com/Yirululu/CS330/blob/main/variables.cpp) for code samples
 ### Naming
 #### Case Sensitive
 C++ is case-sensitive, for example, newNum and newnum are totally different identifiers in C++.
@@ -101,7 +101,7 @@ Variable name must start with a letter (A-Z or a-z) or an underscore (_), but ca
 Camel case is common for local variables (newNum).\
 Underscore case: Sometimes used, especially in constants (such as first_name).
 
-### Types (You can also download this file here [file]()
+### Types (You can also download this file here [file](https://github.com/Yirululu/CS330/blob/main/variables.cpp)
 ```
 #include <iostream>
 #include <string>

@@ -101,7 +101,7 @@ Variable name must start with a letter (A-Z or a-z) or an underscore (_), but ca
 Camel case is common for local variables (newNum).\
 Underscore case: Sometimes used, especially in constants (such as first_name).
 
-### Types (You can also download this file here [file](https://github.com/Yirululu/CS330/blob/main/variables.cpp)
+### Types
 ```
 #include <iostream>
 #include <string>
@@ -171,6 +171,23 @@ int main() {
 }
 ```
 
+### Operators
+
+#### Arithmetic Operators
+Unary operators (++, –) 
+binary operators (+,-,*,/)
+#### Relational Operators 
+Comparison 
+Returns boolean value (<,>,=...)
+#### Logical Operators 
+Combine two or more conditions 
+Returns boolean value (&&, ||, !)
+#### Bitwise Operators 
+Perform bit-level operations (&, |, ^, <<, >>, ~)
+#### Assignment Operators 
+Used to assign value to a variable (=, +=, -=, *=, /=)
+#### Ternary or Conditional Operators 
+Returns value based on condition (?) 
 
 
 

@@ -178,12 +178,33 @@ C++ is a statically typed language, meaning the type of each variable is determi
 It is strongly typed, and data is predefined within the language. So that type conversions must be explicit in most cases. 
 
 #### Explicitly typed or implicitly typed?
-C++ is explicit, it needs to declare variable types, function parameters, and return values.
+C++ is explicit, it needs to declare variable types, function parameters, and return values before using them. Implicit 
 
 #### Are some variables mutable while others are immutable?
 By default, variables in C++ are mutable, meaning their values can change after being assigned. However, you can declare variables as immutable using the "const" keyword:
 ```
 const int a = 80; // then x is changing to immutable.
+```
+#### Coding Example contains these features:
+```
+#include <iostream>
+
+int main() {
+    // Statically typed and mutable variable
+    int a = 10;
+    const float b = 3.14; // Immutable variable
+    
+    // Mixed-type operation
+    float result = a + b; // 'a' is changing to float
+    
+    // Type binding and operator binding at compile time
+    std::cout << "The result is: " << result << std::endl;
+    
+    // Example of implicit typing
+    auto c = a * b; // 'c' is automatically a float due to mixed operation
+    
+    return 0;
+}
 ```
 
 ### Operators

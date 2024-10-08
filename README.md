@@ -228,7 +228,38 @@ int x = 10;
 float y = 3.14;
 float result = x + y; // x change to float
 ```
+## Functions
 
+### Syntax for declaring a function
+In C++, a function is declared with a return type, a name, and a list of parameters. For example, look at this code:
+```
+int multiply(int a, int b) {
+    return a * b;
+}
+```
+The return type 'int' comes before the function name 'multiply', followed by the parameters in parentheses. Parameters include both their types and names. 
+
+### Function placement
+In C++, functions must either be declared before they are used or be forward-declared. This is why all the functions in this code are written before the main() function.
+
+### Recursive functions
+C++ supports recursion, which is when a function calls itself. Here, the factorial function demonstrates this:
+```
+int factorial(int n) {
+    if (n == 0 || n == 1) return 1;
+    return n * factorial(n - 1);
+}
+```
+The base case stops the recursion when n is 0 or 1.
+
+### Multiple parameters
+C++ functions can accept multiple parameters, and they can be of different types. For example:
+```
+int multiply(int a, int b);
+```
+Here, both parameters are integers. If needed, different data types can be used in a single function.
+
+###
 
 
 ## Sources

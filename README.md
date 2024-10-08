@@ -3,8 +3,8 @@ This repo is for learning C++ in Programming Languages\
 Author: Yiru Chen
 
 ## Language quick overview
-**C++ is a popular programming language. And is used to create computer programs, and is one of the most used language in game development.C++ allows software developers to define their own data types and manipulate them using functions and methods. It also allows low-level programming and provides access to memory, enabling fast and efficient execution of code. It also supports generic programming using templates, which let code be written in a generic form and reused for different data types.\
-The C++ language is an object-oriented programming languages and is a Middle-Level Language. It is used in fields such as system software, game development, embedded systems, scientific computing and high-performance applications. The C++ standard library provides a range of coding utilities and functions, making it easy to develop complex software systems. C++ can run on many platforms, including Linux, Mac and Windows.**
+C++ is a popular programming language. And is used to create computer programs, and is one of the most used language in game development.C++ allows software developers to define their own data types and manipulate them using functions and methods. It also allows low-level programming and provides access to memory, enabling fast and efficient execution of code. It also supports generic programming using templates, which let code be written in a generic form and reused for different data types.\
+The C++ language is an object-oriented programming languages and is a Middle-Level Language. It is used in fields such as system software, game development, embedded systems, scientific computing and high-performance applications. The C++ standard library provides a range of coding utilities and functions, making it easy to develop complex software systems. C++ can run on many platforms, including Linux, Mac and Windows.
 
 ### History
 C++ was created in 1979 by Danish computer scientist Bjarne Stroustrup at AT&T Bell Labs.\
@@ -49,7 +49,7 @@ Check the boxes for:\
 
 ### How to run your code in C++?
 In VSCode, go to File > New Text File, then choose C++ as the language when prompted.\
-Write a simple C++ program, for example the "Hello World"(I also provided the code as a seperate file [file](https://github.com/Yirululu/CS330/blob/main/Helloworld.cpp):
+Write a simple C++ program, for example the "Hello World"(I also provided the code as a seperate [file](https://github.com/Yirululu/CS330/blob/main/Helloworld.cpp):
 ```
 #include <iostream>
 using namespace std;
@@ -229,6 +229,8 @@ float y = 3.14;
 float result = x + y; // x change to float
 ```
 ## Functions
+Refer to the [file]( ) for code samples\
+You can compile and run this code in any C++ IDE like VSCode, and it will display the results of each function call, proving how the language handles each task.
 
 ### Syntax for declaring a function
 In C++, a function is declared with a return type, a name, and a list of parameters. For example, look at this code:
@@ -259,7 +261,37 @@ int multiply(int a, int b);
 ```
 Here, both parameters are integers. If needed, different data types can be used in a single function.
 
-###
+### Returning multiple values
+C++ does not natively return multiple values, but you can work around this using pair or tuple, or by using custom structs. In the splitString function, I use a pair to return two strings:
+```
+pair<string, string> splitString(string s) {
+    int mid = s.length() / 2;
+    return {s.substr(0, mid), s.substr(mid)};
+}
+```
+### How are arguments passed to subprograms? 
+C++ supports both pass-by-value and pass-by-reference. The modifyValue function demonstrates pass-by-reference using the & symbol:
+```
+void modifyValue(int& a) {
+    a = 100;  // this modifies the original variable
+}
+```
+When called, the original variable is modified, proving that it's pass-by-reference.
+
+### Argument storage:
+In C++, parameters passed by value are stored on the stack, while references are pointers to the heap memory. Local variables and parameters are usually stored in the stack frame of the current function.
+
+### Scoping rules: 
+Variables in C++ have block scope, meaning they are only visible within the block they are defined in. Function parameters and local variables are destroyed when the function exits, and their scope is limited to the function in which they are declared.
+
+### Side-effects: 
+Functions in C++ can cause side effects, particularly when using pass-by-reference. There are no guardrails against side effects unless you use const to prevent modification of passed variables.
+
+### Local variable storage: 
+Local variables are stored on the stack and dynamic objects are stored on the heap.
+
+### Other considerations: 
+C++ uses static scoping, meaning variable visibility is determined at compile time. Recursive functions should be used carefully to avoid stack overflow due to excessive recursion depth.
 
 
 ## Sources
@@ -270,7 +302,12 @@ Here, both parameters are integers. If needed, different data types can be used 
 [5]https://code.visualstudio.com/docs/languages/cpp \
 [6]https://www.ibm.com/docs/en/i/7.4?topic=only-name-binding-dependent-names-c \
 [7]https://www.geeksforgeeks.org/early-binding-late-binding-c/ \
-[8]
+[8]https://cplusplus.com/doc/tutorial/functions/ \
+[9]https://www.programiz.com/cpp-programming/function \
+[10]https://www.simplilearn.com/tutorials/cpp-tutorial/cpp-functions \
+[11]https://learn.microsoft.com/en-us/cpp/cpp/functions-cpp?view=msvc-170 \
+[12]https://stackoverflow.com/questions/20916162/calling-a-function-in-main
+
 
 
 

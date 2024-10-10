@@ -229,7 +229,7 @@ float y = 3.14;
 float result = x + y; // x change to float
 ```
 ## Functions
-Refer to the [file]( ) for code samples\
+Refer to the [file](https://github.com/Yirululu/CS330/blob/main/Function.cpp) for code samples\
 You can compile and run this code in any C++ IDE like VSCode, and it will display the results of each function call, proving how the language handles each task.
 
 ### Syntax for declaring a function

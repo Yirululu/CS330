@@ -297,7 +297,129 @@ C++ uses static scoping, meaning variable visibility is determined at compile ti
 ## Selection, Loops and Conditionals
 Refer to the [file]() for code samples\
 
+### Boolean Values in C++
+In C++, the boolean values are true and false. They are part of the bool data type. Additionally, C++ allows using 1 for true and 0 for false. For example:
+```
+bool isTrue = true;
+bool isFalse = false;
+int a = 1;  // equivalent to true
+int b = 0;  // equivalent to false
+```
 
+### Conditional Statements in C++
+C++ supports ``if``, ``if/else`` statements. For example:
+```
+int main() {
+    int number;
+
+    cout << "Enter an integer: ";
+    cin >> number;
+
+    // Using if statement
+    if (number > 0) {
+        cout << "The number is positive." << endl;
+    }
+
+    // Using if/else statement
+    if (number < 0) {
+        cout << "The number is negative." << endl;
+    } else {
+        cout << "The number is zero." << endl;
+    }
+
+    return 0;
+}
+```
+This program uses an if statement to check if the number is positive. Then, it uses an if/else statement to check if the number is negative; if it is not, it concludes that the number is zero. \
+It demonstrates the basic structure and usage of conditional statements in C++.
+
+### Code Block Delimitation
+C++ uses curly braces ``{ }`` to delimit code blocks for conditional statements and loops. \
+For example:
+```
+if (x > 0) {
+    // code to execute
+} else {
+    // alternative code
+}
+```
+### Short-Circuit Evaluation
+C++ supports short circuit evaulation with ``&&`` (AND) ``||`` (OR) operators. \
+Short-Circuit example:
+```
+int a = 0, b = 10;
+if (a != 0 && b / a > 5) {
+    // This will not cause a divide-by-zero error due to short-circuiting.
+}
+```
+The && operator will not evaluate the second condition if the first one is false.
+
+### Dangling Else problem
+C++ resolves the "dangling else" problem by associating an ``else`` with the nearest ``if`` that does not already have an else branch. \
+For example:
+```
+if (x > 0)
+    if (y > 0)
+        std::cout << "x and y are positive";
+    else  // This 'else' is associated with the inner 'if'
+        std::cout << "y is non-positive";
+```
+
+### Switch-Case Statement in C++
+C++ supports ``switch-case`` statements. \
+Break Statement: You must use ``break`` to prevent fall-through in each case. \ 
+For example:
+```
+int x = 2;
+switch (x) {
+    case 1:
+        std::cout << "One";
+        break;
+    case 2:
+        std::cout << "Two";
+        break;
+    default:
+        std::cout << "Other";
+}
+```
+Without ``break``, the cases will fall through, meaning that all statements after the matching case will be executed. And you cannot use ``continue`` in ``switch-case`` statements.
+
+### Loop Types in C++
+C++ supports several types of loops: \
+``while`` loop: Repeats while a condition is True. For example:
+```
+int i = 0;
+while (i < 5) {
+    std::cout << i;
+    i++;
+}
+```
+
+``do-while`` loop: Executes at least once and then repeats based on a condition. For example:
+```
+int i = 0;
+do {
+    std::cout << i;
+    i++;
+} while (i < 5);
+```
+
+``for`` loop: Repeats a block of code a specific number of times.
+```
+for (int i = 0; i < 5; i++) {
+    std::cout << i;
+}
+```
+
+``range-based for`` loop: Iterates over elements in a container.
+```
+int arr[] = {1, 2, 3, 4};
+for (int x : arr) {
+    std::cout << x;
+}
+```
+### Loop Code Block Variables
+Variables declared inside a loop (or any code block) in C++ have *block scope*, meaning they are accessible only within that block. And variables declared inside a function (outside of loops) have *function scope* and are accessible throughout the function.
 
 
 

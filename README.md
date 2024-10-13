@@ -294,6 +294,13 @@ Local variables are stored on the stack and dynamic objects are stored on the he
 C++ uses static scoping, meaning variable visibility is determined at compile time. Recursive functions should be used carefully to avoid stack overflow due to excessive recursion depth.
 
 
+## Selection, Loops and Conditionals
+Refer to the [file]() for code samples\
+
+
+
+
+
 ## Sources
 [1]https://www.geeksforgeeks.org/history-of-c/ \
 [2]https://www.w3schools.com/cpp/ \
@@ -306,7 +313,13 @@ C++ uses static scoping, meaning variable visibility is determined at compile ti
 [9]https://www.programiz.com/cpp-programming/function \
 [10]https://www.simplilearn.com/tutorials/cpp-tutorial/cpp-functions \
 [11]https://learn.microsoft.com/en-us/cpp/cpp/functions-cpp?view=msvc-170 \
-[12]https://stackoverflow.com/questions/20916162/calling-a-function-in-main
+[12]https://stackoverflow.com/questions/20916162/calling-a-function-in-main \
+[13]https://stackoverflow.com/questions/26588533/selection-and-iteration \
+[14]https://www.programiz.com/cpp-programming/for-loop \
+[15]https://cplusplus.com/doc/tutorial/control/ \
+[16]https://cplusplus.com/forum/beginner/280810/ \
+[17]https://www.geeksforgeeks.org/cpp-loops/ \
+
 
 
 

@@ -295,7 +295,7 @@ C++ uses static scoping, meaning variable visibility is determined at compile ti
 
 
 ## Selection, Loops and Conditionals
-Refer to the [file]() for code samples\
+Refer to the [file]() for code samples \
 
 ### Boolean Values in C++
 In C++, the boolean values are true and false. They are part of the bool data type. Additionally, C++ allows using 1 for true and 0 for false. For example:

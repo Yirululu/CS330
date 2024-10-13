@@ -382,7 +382,7 @@ switch (x) {
         std::cout << "Other";
 }
 ```
-Without ``break``, the cases will fall through, meaning that all statements after the matching case will be executed. And you cannot use ``continue`` in ``switch-case`` statements.
+Without break, the cases will fall through, meaning that all statements after the matching case will be executed. And you cannot use continue in switch-case statements.
 
 ### Loop Types in C++
 C++ supports several types of loops: \

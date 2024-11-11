@@ -424,7 +424,7 @@ Variables declared inside a loop (or any code block) in C++ have *block scope*, 
 
 ## Classes and Inheritance
 
-### Refer to the [file]() for code samples\
+### Refer to the [file](https://github.com/Yirululu/CS330/blob/main/Inheritance.cpp) for code samples
 
 ### Objects in C++
 C++ fully supports object-oriented programming with classes and objects. Classes in C++ allow encapsulation of data and functions. For example in this code, I create objects (like Vehicle and Car), add attributes and functions to them, and even inherit to make new ones.

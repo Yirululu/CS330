@@ -422,6 +422,26 @@ for (int x : arr) {
 Variables declared inside a loop (or any code block) in C++ have *block scope*, meaning they are accessible only within that block. And variables declared inside a function (outside of loops) have *function scope* and are accessible throughout the function.
 
 
+## Classes and Inheritance
+
+### Refer to the [file]() for code samples\
+
+### Objects in C++
+C++ fully supports object-oriented programming with classes and objects. Classes in C++ allow encapsulation of data and functions. For example in this code, I create objects (like Vehicle and Car), add attributes and functions to them, and even inherit to make new ones.
+
+### Naming Conventions
+Class names are often capitalized (like Vehicle and Car). Member variables might use underscores or camelCase, but conventions vary. Just need to be consistent.
+
+### Printing Objects
+C++ doesn’t have a toString() or __str__ method. Instead, you make your own method (like showInfo()) to print object information. This gives you more control over the output.
+
+### Inheritance and Multiple Inheritance
+C++ allows classes to inherit from more than one base class. In this example code, Car inherits from Vehicle and overrides the showInfo() method.
+
+### Overloading and Resolving Calls
+C++ picks the method based on the object type and the parameter list. For overridden methods like showInfo(), virtual functions ensure the correct method is called, even if we’re dealing with a Vehicle pointer pointing to a Car.
+
+
 
 ## Sources
 [1]https://www.geeksforgeeks.org/history-of-c/ \

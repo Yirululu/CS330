@@ -437,7 +437,6 @@ C++ doesn’t have a toString() or __str__ method. Instead, you make your own me
 
 ### Inheritance and Multiple Inheritance
 C++ allows classes to inherit from more than one base class. In this example code, Car inherits from Vehicle and overrides the showInfo() method.
-```
 
 
 ### Overloading and Resolving Calls

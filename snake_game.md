@@ -47,9 +47,6 @@ This project implements a **Snake Game** using **C++** and the **SFML library** 
 
 ### 2.3 Enhanced User Experience:
 
-- Audio effects:
-  - Background music for immersion.
-  - Sound effects for eating food and collisions.
 - Difficulty progression:
   - The snake's speed increases as the player's score rises, implemented through an exponential decay function to ensure a smooth and manageable challenge.
 - High Score Module:
@@ -60,21 +57,6 @@ This project implements a **Snake Game** using **C++** and the **SFML library** 
 
 ### 3 Project Details
 
-#### About Sound and Music
-
-First, we would like to thank [FreeSound](https://freesound.org) for providing free sound effect resources. You can find various sound effects on this website.
-
-In this project, we used the following files from FreeSound: `background.wav`, `collision.wav`, and `eating.wav`.
-If you wish to modify them, you can replace the three files in the `assets` folder with your preferred sound files.
-
-```shell
-assets/
-├── background.wav
-├── collision.wav
-└── eating.wav
-```
-
----
 
 #### About Font
 
